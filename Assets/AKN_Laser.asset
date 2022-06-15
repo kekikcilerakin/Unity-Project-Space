@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4332cbbb09e5f4488888f7f22e1ead0, type: 3}
+  m_Name: AKN_Laser
+  m_EditorClassIdentifier: 
+  name: Laser
+  prefab: {fileID: 6948733591320898248, guid: c5f34d402096a1249b075ac7bd865e6a, type: 3}
+  defaultCount: 1
+  defaultCooldown: 4
+  cooldown: 0
