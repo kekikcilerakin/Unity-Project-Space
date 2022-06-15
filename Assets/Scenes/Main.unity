@@ -328,9 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f5ef0025695de4ea9ba28476957fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 11400000, guid: dd35a63c2b5402b458773a13df1beed3, type: 2}
-  - {fileID: 11400000, guid: 64ac1a4f6a2883146a6d12ca399f859e, type: 2}
+  weapons: []
   laserPoints:
   - {fileID: 2060228502}
   - {fileID: 202806906}
@@ -340,8 +338,8 @@ MonoBehaviour:
   missilePoints:
   - {fileID: 637506586}
   - {fileID: 820641798}
-  selectedShip: 
-  weaponDB: {fileID: 0}
+  selectedShip: 1
+  weaponDB: {fileID: 393201953}
 --- !u!61 &393201952
 BoxCollider2D:
   m_ObjectHideFlags: 0
