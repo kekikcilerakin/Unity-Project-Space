@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class AKN_CombatController : MonoBehaviour
 {
-    [SerializeField] private AKN_LaserSO laserSO;
-    [SerializeField] private Transform[] laserPoints;
+    [SerializeField] private List<AKN_WeaponSO> weapons;
+    public Transform[] laserPoints;
+    public Transform[] missilePoints;
 
+    public string selectedShip;
+    public AKN_WeaponDB weaponDB;
     
 
     private void Start()
     {
-        laserSO = Instantiate(laserSO);
+        if (selectedShip == "1")
+        {
+            weapons.Add(Instantiate(weaponDB.weapons[0]));
+        }
+        else if (selectedShip == "2")
+        {
+            weapons.Add(Instantiate(weaponDB.weapons[1]));
+        }
     }
 
     private void Update()
     {
-        ShootLaser();
-    }
-
-    private void ShootLaser()
-    {
-        laserSO.cooldown -= Time.deltaTime;
-        if(laserSO.cooldown < 0)
+        foreach (AKN_WeaponSO weapon in weapons)
         {
-            int rnd = Random.Range(0, laserPoints.Length);
-            Instantiate(laserSO.prefab, laserPoints[rnd].position, laserPoints[rnd].rotation);
-            laserSO.cooldown = laserSO.defaultCooldown;
+            weapon.Shoot();
         }
-
     }
 }

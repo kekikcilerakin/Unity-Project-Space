@@ -9,11 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4332cbbb09e5f4488888f7f22e1ead0, type: 3}
-  m_Name: AKN_Laser
+  m_Script: {fileID: 11500000, guid: cd813ed20cb853a41b1f726f15a33795, type: 3}
+  m_Name: Laser
   m_EditorClassIdentifier: 
   name: Laser
   prefab: {fileID: 6948733591320898248, guid: c5f34d402096a1249b075ac7bd865e6a, type: 3}
-  defaultCount: 1
+  defaultProjectileSpeed: 5.5
+  currentProjectileSpeed: 5.5
+  level: 0
+  currentProjectileCount: 2
+  maxProjectileCount: 5
   defaultCooldown: 4
-  cooldown: 0
+  currentCooldown: 4

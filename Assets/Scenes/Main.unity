@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 393201952}
   - component: {fileID: 393201948}
   - component: {fileID: 393201951}
+  - component: {fileID: 393201953}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -275,6 +276,8 @@ Transform:
   - {fileID: 258254914}
   - {fileID: 943786167}
   - {fileID: 1635352572}
+  - {fileID: 637506586}
+  - {fileID: 820641798}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -325,13 +328,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f5ef0025695de4ea9ba28476957fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserSO: {fileID: 11400000, guid: a052d2e0c94e57b4b82990611017a6a9, type: 2}
+  weapons:
+  - {fileID: 11400000, guid: dd35a63c2b5402b458773a13df1beed3, type: 2}
+  - {fileID: 11400000, guid: 64ac1a4f6a2883146a6d12ca399f859e, type: 2}
   laserPoints:
   - {fileID: 2060228502}
   - {fileID: 202806906}
   - {fileID: 258254914}
   - {fileID: 943786167}
   - {fileID: 1635352572}
+  missilePoints:
+  - {fileID: 637506586}
+  - {fileID: 820641798}
+  selectedShip: 
+  weaponDB: {fileID: 0}
 --- !u!61 &393201952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -358,6 +368,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &393201953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393201945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1ec90504a8fc94fba0d4271bf1e779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 11400000, guid: dd35a63c2b5402b458773a13df1beed3, type: 2}
+  - {fileID: 11400000, guid: 64ac1a4f6a2883146a6d12ca399f859e, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +467,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &637506585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637506586}
+  m_Layer: 0
+  m_Name: MissilePoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637506586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637506585}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000029504295}
+  m_LocalPosition: {x: 0.25, y: -0.6666667, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 393201947}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!1 &820641797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820641798}
+  m_Layer: 0
+  m_Name: MissilePoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820641798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820641797}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000029504295}
+  m_LocalPosition: {x: -0.25, y: -0.6666667, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 393201947}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!1 &943786166
 GameObject:
   m_ObjectHideFlags: 0

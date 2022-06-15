@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd813ed20cb853a41b1f726f15a33795, type: 3}
+  m_Name: Missile
+  m_EditorClassIdentifier: 
+  name: Missile
+  prefab: {fileID: 1124272393779092425, guid: 6bf5993ed0a03b24ea996f93ecedca2d, type: 3}
+  defaultProjectileSpeed: 5.5
+  currentProjectileSpeed: 5.5
+  level: 0
+  currentProjectileCount: 1
+  maxProjectileCount: 2
+  defaultCooldown: 4
+  currentCooldown: 4

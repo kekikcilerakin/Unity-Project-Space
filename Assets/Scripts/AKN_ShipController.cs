@@ -21,5 +21,6 @@ public class AKN_ShipController : MonoBehaviour
         Vector3 targetRotation = new Vector3(0, 0, angle);
         rb2d.MoveRotation(Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), turnSpeed * Time.deltaTime));
         rb2d.MovePosition(rb2d.position + ((Vector2)transform.up * moveSpeed * Time.deltaTime));
+        
     }
 }

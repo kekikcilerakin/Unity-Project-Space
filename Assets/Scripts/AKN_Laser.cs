@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class AKN_Laser : MonoBehaviour
 {
-    [SerializeField] private float speed = 20f;
+    [SerializeField] private AKN_WeaponSO weapon;
     private Rigidbody2D rb2d;
 
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.velocity = transform.up * speed;
+        rb2d.velocity = transform.up * weapon.currentProjectileSpeed;
     }
 }
