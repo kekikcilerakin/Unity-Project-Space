@@ -60,7 +60,7 @@ public class AKN_WeaponSO : ScriptableObject
                 currentCooldown = defaultCooldown;
                 
             }
-            AddProjectile();
+            AddProjectile(); //delete later
         }
     }
 }
